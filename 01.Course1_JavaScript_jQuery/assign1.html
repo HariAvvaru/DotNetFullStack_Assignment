@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Employee Details</title>
+    </head>
+    <body>
+        <fieldset>
+            <legend>Employee Details</legend>
+            Emp no: <input type="number" id="t1"/><br/><br/>
+            Emp name: <input type="text" id="t2"/><br/><br/>
+            Job: <input type="text" id="t3"/><br/><br/>
+            Salary: <input type="number" id="t4"/><br/><br/>
+            <input type="button" value="Submit" onclick="f1()"/>
+        </fieldset>
+
+        <script>
+            function f1(){
+                let tx1=document.getElementById("t1");
+                let tx2=document.getElementById("t2");
+                let tx3=document.getElementById("t3");
+                let tx4=document.getElementById("t4");
+
+                let fin="Empno : "+tx1.value+", Ename : "+tx2.value+", Job : "+tx3.value+", Salary : "+tx4.value;
+                console.log(fin);
+            }
+        </script>
+    </body>
+</html>
