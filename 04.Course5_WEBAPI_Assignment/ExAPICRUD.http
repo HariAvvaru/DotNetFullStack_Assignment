@@ -1,0 +1,6 @@
+@ExAPICRUD_HostAddress = http://localhost:5106
+
+GET {{ExAPICRUD_HostAddress}}/weatherforecast/
+Accept: application/json
+
+###
