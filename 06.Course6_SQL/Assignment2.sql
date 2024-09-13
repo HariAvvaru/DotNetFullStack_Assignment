@@ -36,10 +36,10 @@ insert into Student values(529, 'Viswa', 'React', 'BZA', 3987371939);
 
 
 --	a.   Find out how many Students are joined for "Angular"  Course
-select count(*) as 'Number of Students in Angular', CourseName from Student where CourseName='Angular' group by CourseName;
+select count(*) as 'Number of Students in Angular', CourseName from Student where CourseName='Angular';
 
 --	b.   Find out how many Students are joined from  "Hyderabad"  City
-select count(*) as 'Number of Students in Hyderabad', City from Student where City='HYD' group by City;
+select count(*) as 'Number of Students in Hyderabad', City from Student where City='HYD';
 
 /*c.    Display No. of Students are join from each  City based 
 	
