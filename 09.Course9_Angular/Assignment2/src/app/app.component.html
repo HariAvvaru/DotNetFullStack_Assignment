@@ -1,0 +1,21 @@
+<style>
+  #dd {
+    border: 3px solid blue;
+    width: 200px;
+    padding: 10px;
+    margin: 10px;
+  }
+  #d {
+    display: grid;
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+    gap: 5px;
+    align-content: center;
+  }
+</style>
+<div id="d">
+  <div *ngFor="let item of dataArray" id="dd">
+    <p>Department Number : {{ item.dno }}</p>
+    <p>Department Name : {{ item.dname }}</p>
+    <p>Location : {{ item.loc }}</p>
+  </div>
+</div>
